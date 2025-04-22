@@ -1,0 +1,184 @@
+/* globals.css */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add any other global styles here */
+
+
+
+/* General Styles */
+.react-calendar {
+    width: 100% !important;
+    border: none !important;
+    font-family: "Inter", sans-serif !important;
+  }
+  
+  .react-calendar__navigation__label__labelText {
+    font-weight: 600;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #c3ebfa !important;
+    color: black !important;
+  }
+  
+  /* React Calendar Navigation and Toolbar */
+  .rbc-btn-group:first-child {
+    display: none !important;
+  }
+  
+  .rbc-toolbar-label {
+    text-align: right !important;
+    padding: 0px 20px !important;
+  }
+  
+  .rbc-btn-group:last-child {
+    font-size: 13px !important;
+  }
+  
+  .rbc-btn-group:last-child button {
+    border: none !important;
+    background-color: #f1f0ff !important;
+    margin-left: 2px !important;
+  }
+  
+  .rbc-toolbar button.rbc-active {
+    background-color: #dbdafe !important;
+    box-shadow: none !important;
+  }
+  
+  /* Time View and Slots */
+  .rbc-time-view {
+    border-color: #eee !important;
+  }
+  
+  .rbc-time-header {
+    display: none !important;
+  }
+  
+  .rbc-time-content {
+    border: none !important;
+  }
+  
+  .rbc-time-gutter.rbc-time-column {
+    font-size: 12px !important;
+  }
+  
+  .rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+    padding: 0px 20px !important;
+  }
+  
+  .rbc-timeslot-group {
+    background-color: #f7fdff !important;
+  }
+  
+  .rbc-day-slot {
+    font-size: 14px !important;
+  }
+  
+  /* Event Styles */
+  .rbc-event {
+    border: none !important;
+    color: black !important;
+    padding: 10px !important;
+    margin: 10px !important;
+    width: 99% !important;
+  }
+  
+  .rbc-event:nth-child(1) {
+    background-color: #e2f8ff !important;
+  }
+  
+  .rbc-event:nth-child(2) {
+    background-color: #fefce8 !important;
+  }
+  
+  .rbc-event:nth-child(3) {
+    background-color: #f2f1ff !important;
+  }
+  
+  .rbc-event:nth-child(4) {
+    background-color: #fdf2fb !important;
+  }
+  
+  .rbc-event:nth-child(5) {
+    background-color: #e2f8ff !important;
+  }
+  
+  .rbc-event:nth-child(6) {
+    background-color: #fefce8 !important;
+  }
+  
+  .rbc-event:nth-child(7) {
+    background-color: #f2f1ff !important;
+  }
+  
+  .rbc-event:nth-child(8) {
+    background-color: #fdf2fb !important;
+  }
+  
+  .rbc-event-label {
+    color: gray !important;
+    margin-bottom: 5px;
+  }
+  

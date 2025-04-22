@@ -1,0 +1,47 @@
+.performance-container {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    height: 320px;
+    position: relative;
+  }
+  
+  .performance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .performance-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .performance-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .performance-score {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .performance-text {
+    font-size: 0.75rem;
+    color: #d1d5db; /* Gray-300 */
+  }
+  
+  .performance-subtitle {
+    font-weight: 500;
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+  

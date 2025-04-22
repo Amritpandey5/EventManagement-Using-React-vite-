@@ -1,0 +1,18 @@
+.attendance-chart-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    height: 100%;
+  }
+  
+  .attendance-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .attendance-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  

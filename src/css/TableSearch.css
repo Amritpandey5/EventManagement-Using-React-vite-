@@ -1,0 +1,23 @@
+/* TableSearch.css */
+
+.table-search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem; /* Text size small */
+    border-radius: 9999px;
+    padding: 0.5rem;
+    border: 1.5px solid #d1d5db; /* Gray 300 */
+  }
+  
+  .search-input {
+    width: 200px;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.75rem;
+    color: #4b5563; /* Gray 700 */
+  }
+  

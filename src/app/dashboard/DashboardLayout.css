@@ -1,0 +1,70 @@
+/* DashboardLayout.css */
+
+/* Main container layout */
+.dashboard-layout {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 14%;
+    padding: 16px;
+    background-color: #ffffff;
+  }
+  
+  .sidebar .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .sidebar .logo-container .logo-text {
+    font-weight: bold;
+    display: none;
+  }
+  
+  @media (min-width: 1024px) {
+    .sidebar .logo-container .logo-text {
+      display: block;
+    }
+  }
+  
+  /* Content area */
+  .content-area {
+    width: 86%;
+    background-color: #f7f8fa;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .sidebar {
+      width: 8%;
+    }
+    .content-area {
+      width: 92%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .sidebar {
+      width: 16%;
+    }
+    .content-area {
+      width: 84%;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .sidebar {
+      width: 14%;
+    }
+    .content-area {
+      width: 86%;
+    }
+  }
+  

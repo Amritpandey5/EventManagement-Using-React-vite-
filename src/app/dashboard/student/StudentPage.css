@@ -1,0 +1,51 @@
+/* StudentPage.css */
+
+/* Main Container */
+.student-page-container {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .student-page-container .left-container {
+    width: 100%;
+    flex: 2;
+  }
+  
+  .student-page-container .right-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Schedule Card */
+  .schedule-card {
+    height: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .schedule-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Responsive Layout */
+  @media (min-width: 1024px) {
+    .student-page-container {
+      flex-direction: row;
+    }
+  
+    .left-container {
+      width: 66.6667%;
+    }
+  
+    .right-container {
+      width: 33.3333%;
+    }
+  }
+  

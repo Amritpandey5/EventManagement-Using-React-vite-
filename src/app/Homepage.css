@@ -1,0 +1,13 @@
+/* Homepage.css */
+.homepage {
+    padding: 20px;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  

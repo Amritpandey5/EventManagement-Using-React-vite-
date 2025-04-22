@@ -1,0 +1,35 @@
+/* BigCalendar.css */
+
+/* Container for the calendar */
+.big-calendar-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Specific styling for the React Big Calendar */
+  .calendar {
+    height: 98%;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  /* Customize Calendar Header styles if needed */
+  .rbc-header {
+    background-color: #f3f4f6;
+    color: #333;
+  }
+  
+  /* Customize the day column styles */
+  .rbc-day-header {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* You can add more custom styles to adjust the look of your calendar */
+  

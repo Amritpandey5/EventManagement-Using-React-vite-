@@ -1,0 +1,46 @@
+.user-card {
+    border-radius: 1rem;
+    padding: 1rem;
+    flex: 1;
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* You can dynamically assign these classes via parent container logic or inline styles in React */
+  .user-card:nth-child(odd) {
+    background-color: #cfceff; /* Equivalent to lamaPurple */
+  }
+  
+  .user-card:nth-child(even) {
+    background-color: #fae27c; /* Equivalent to lamaYellow */
+  }
+  
+  .user-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-card-year {
+    font-size: 10px;
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    color: green;
+  }
+  
+  .user-card-count {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  
+  .user-card-type {
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280; /* Equivalent to text-gray-500 */
+  }
+  

@@ -1,0 +1,19 @@
+.finance-chart-container {
+    background-color: white;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  
+  .finance-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .finance-chart-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  

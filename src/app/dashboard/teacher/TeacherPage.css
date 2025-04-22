@@ -1,0 +1,44 @@
+.teacher-page {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .left-container {
+    width: 100%;
+  }
+  
+  .schedule-container {
+    height: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .schedule-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .right-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .teacher-page {
+      flex-direction: row;
+    }
+  
+    .left-container {
+      width: 66.6667%;
+    }
+  
+    .right-container {
+      width: 33.3333%;
+    }
+  }
+  
