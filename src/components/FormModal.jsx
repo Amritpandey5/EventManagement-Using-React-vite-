@@ -1,16 +1,11 @@
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import { useState } from "react";
+import React, { useState } from "react";
 import "../css/FormModal.css"; // Import the CSS file for styling
 
-const TeacherForm = dynamic(() => import("./forms/TeacherForm"), {
-  loading: () => <h1>Loading...</h1>,
-});
+// Import the components for TeacherForm and StudentForm
+import TeacherForm from "./forms/TeacherForm";
+import StudentForm from "./forms/StudentForm";
 
-const StudentForm = dynamic(() => import("./forms/StudentForm"), {
-  loading: () => <h1>Loading...</h1>,
-});
-
+// Dynamically select the form based on the table (teacher/student)
 const forms = {
   teacher: (type, data) => <TeacherForm type={type} data={data} />, 
   student: (type, data) => <StudentForm type={type} data={data} />,
@@ -24,6 +19,7 @@ const FormModal = ({
 }) => {
   const [open, setOpen] = useState(false);
 
+  // Function to render the appropriate form
   const Form = () => {
     if (type === "delete" && id) {
       return (
@@ -57,7 +53,7 @@ const FormModal = ({
         className={`form-button ${sizeClass} ${bgClass}`}
         onClick={() => setOpen(true)}
       >
-        <Image src={`/${type}.png`} alt="" width={16} height={16} />
+        <img src={`/${type}.png`} alt={`${type} icon`} width={16} height={16} />
       </button>
       {open && (
         <div className="modal-overlay">
@@ -67,7 +63,7 @@ const FormModal = ({
               className="modal-close"
               onClick={() => setOpen(false)}
             >
-              <Image src="/close.png" alt="" width={14} height={14} />
+              <img src="/close.png" alt="Close modal" width={14} height={14} />
             </div>
           </div>
         </div>

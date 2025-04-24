@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FormModal from "./components/FormModal";
-import Performance from "./components/Performance";
-import Announcements from "./components/Announcements";
-import BigCalendar from "./components/BigCalendar";
-import { role } from "./lib/data";
+import FormModal from "../../../../../components/FormModal";
+import Performance from "../../../../../components/Performance";
+import Announcements from "../../../../../components/Announcement";
+import BigCalendar from "../../../../../components/BigCalender";
+import { role } from "../../../.././../lib/data";
 import "./SingleTeacherPage.css";
 
 const SingleTeacherPage = () => {

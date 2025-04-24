@@ -5,6 +5,7 @@ import { z } from "zod";
 import InputField from "../InputField"; // Assuming InputField is another component
 import "./StudentForm.css"; // Import the custom CSS file
 
+// Define the validation schema using Zod
 const schema = z.object({
   username: z
     .string()

@@ -13,7 +13,7 @@ const DashboardLayout = () => {
       <div className="sidebar">
         <Link to="/" className="logo-container">
           <img src="/logo.png" alt="logo" width={32} height={32} />
-          <span className="logo-text">SchooLama</span>
+          <span className="logo-text">GURUKUL</span>
         </Link>
         <Menu />
       </div>

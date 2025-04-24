@@ -1,8 +1,8 @@
 import React from "react";
-import { Inter } from "next/font/google";
-import "./globals.css";  // Import your external CSS file
+// import { Inter } from "next/font/google";
+// import ";  // Import your external CSS file
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Lama Dev School Management Dashboard",

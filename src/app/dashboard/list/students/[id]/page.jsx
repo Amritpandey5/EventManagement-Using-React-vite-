@@ -1,9 +1,7 @@
 import React from "react";
-import Announcements from "./components/Announcements";
-import BigCalendar from "./components/BigCalender";
-import Performance from "./components/Performance";
-import Image from "next/image";
-import Link from "next/link";
+import Announcements from "../../../../../components/Announcement";
+import BigCalendar from "../../../../../components/BigCalender";
+import Performance from "../../../../../components/Performance";
 import "./SingleStudentPage.css";
 
 const SingleStudentPage = () => {
@@ -16,7 +14,7 @@ const SingleStudentPage = () => {
           {/* USER CARD */}
           <div className="user-card">
             <div className="user-image">
-              <Image
+              <img
                 src="https://images.pexels.com/photos/5414817/pexels-photo-5414817.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Profile"
                 width={144}
@@ -31,19 +29,19 @@ const SingleStudentPage = () => {
               </p>
               <div className="user-details">
                 <div className="info-item">
-                  <Image src="/blood.png" alt="" width={14} height={14} />
+                  <img src="/blood.png" alt="Blood Type" width={14} height={14} />
                   <span>A+</span>
                 </div>
                 <div className="info-item">
-                  <Image src="/date.png" alt="" width={14} height={14} />
+                  <img src="/date.png" alt="Join Date" width={14} height={14} />
                   <span>January 2025</span>
                 </div>
                 <div className="info-item">
-                  <Image src="/mail.png" alt="" width={14} height={14} />
+                  <img src="/mail.png" alt="Email" width={14} height={14} />
                   <span>user@gmail.com</span>
                 </div>
                 <div className="info-item">
-                  <Image src="/phone.png" alt="" width={14} height={14} />
+                  <img src="/phone.png" alt="Phone" width={14} height={14} />
                   <span>+1 234 567</span>
                 </div>
               </div>
@@ -59,7 +57,7 @@ const SingleStudentPage = () => {
               { icon: "/singleClass.png", title: "6A", subtitle: "Class" },
             ].map((card, index) => (
               <div className="stat-card" key={index}>
-                <Image src={card.icon} alt="" width={24} height={24} className="icon" />
+                <img src={card.icon} alt={card.subtitle} width={24} height={24} className="icon" />
                 <div>
                   <h1 className="card-title">{card.title}</h1>
                   <span className="card-subtitle">{card.subtitle}</span>
@@ -81,11 +79,11 @@ const SingleStudentPage = () => {
         <div className="shortcuts-box">
           <h1 className="shortcuts-title">Shortcuts</h1>
           <div className="shortcuts-list">
-            <Link className="shortcut sky" href="/">Student's Lessons</Link>
-            <Link className="shortcut purple" href="/">Student's Teachers</Link>
-            <Link className="shortcut pink" href="/">Student's Exams</Link>
-            <Link className="shortcut sky" href="/">Student's Assignments</Link>
-            <Link className="shortcut yellow" href="/">Student's Results</Link>
+            <a className="shortcut sky" href="/">Student's Lessons</a>
+            <a className="shortcut purple" href="/">Student's Teachers</a>
+            <a className="shortcut pink" href="/">Student's Exams</a>
+            <a className="shortcut sky" href="/">Student's Assignments</a>
+            <a className="shortcut yellow" href="/">Student's Results</a>
           </div>
         </div>
         <Performance />

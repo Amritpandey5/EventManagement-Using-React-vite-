@@ -1,10 +1,9 @@
 import React from "react";
-import FormModal from "./components/FormModal";
-import Pagination from "./components/Pagination";
-import Table from "./components/Table";
-import TableSearch from "./components/TableSearch";
-import { assignmentsData, role } from "./lib/data";
-import Image from "next/image";
+import FormModal from "../../../../components/FormModal";
+import Pagination from "../../../../components/Pagination";
+import Table from "../../../../components/Table";
+import TableSearch from "../../../../components/TableSearch";
+import { assignmentsData, role } from "../../../../lib/data";
 import "./AssignmentListPage.css";
 
 const columns = [
@@ -61,10 +60,10 @@ const AssignmentListPage = () => {
           <TableSearch />
           <div className="header-buttons">
             <button className="icon-button">
-              <Image src="/filter.png" alt="" width={14} height={14} />
+              <img src="/filter.png" alt="filter" width={14} height={14} />
             </button>
             <button className="icon-button">
-              <Image src="/sort.png" alt="" width={14} height={14} />
+              <img src="/sort.png" alt="sort" width={14} height={14} />
             </button>
             {(role === "admin" || role === "teacher") && (
               <FormModal table="assignment" type="create" />
